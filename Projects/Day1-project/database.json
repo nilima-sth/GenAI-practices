@@ -1,0 +1,22 @@
+{
+    "groceries": {
+        "Rice": {"quantity": 50, "price": 2.5},
+        "Milk": {"quantity": 30, "price": 1.2},
+        "Bread": {"quantity": 40, "price": 1.0}
+    },
+    "cosmetics": {
+        "Shampoo": {"quantity": 25, "price": 4.5},
+        "Lipstick": {"quantity": 15, "price": 7.0},
+        "Soap": {"quantity": 40, "price": 2.0}
+    },
+    "media": {
+        "Book": {"quantity": 20, "price": 10.0},
+        "DVD": {"quantity": 10, "price": 5.0},
+        "Magazine": {"quantity": 25, "price": 3.0}
+    },
+    "fashion": {
+        "T-Shirt": {"quantity": 35, "price": 8.0},
+        "Jeans": {"quantity": 20, "price": 15.0},
+        "Shoes": {"quantity": 15, "price": 25.0}
+    }
+}
