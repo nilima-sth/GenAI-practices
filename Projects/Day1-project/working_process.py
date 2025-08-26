@@ -2,7 +2,7 @@ import json
 import datetime
 
 INVENTORY_FILE = 'D:\GenAI\Day1-project\database.json'
-# Load inventory data
+# Loading inventory data
 with open(INVENTORY_FILE, 'r') as f:
     database = json.load(f)
 
@@ -12,7 +12,7 @@ def show_items():
     for category in database:
         print(f"- {category}")
 
-    # check for valid category
+    # checking for valid category
     while True:
         category = input("Select a Category: ").strip()
         if category not in database:
@@ -53,9 +53,9 @@ def purchase_item(user, category, item, qty):
         return False
 
     database[category][item]['quantity'] -= qty
-    print(f"\n✅ Purchased {qty} {item}(s) from {category}. Remaining stock: {database[category][item]['quantity']}")
+    print(f"\n Purchased {qty} {item}(s) from {category}. Remaining stock: {database[category][item]['quantity']}")
 
-    # save updated database
+    # saving the updated database
     with open(INVENTORY_FILE, 'w') as f:
         json.dump(database, f, indent=4)
 
